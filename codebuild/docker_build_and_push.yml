@@ -6,11 +6,6 @@ env:
     DOCKER_TOKEN: dockerhub-token
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 18
-    commands:
-      - npm ci
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...

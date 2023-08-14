@@ -1,11 +1,13 @@
 version: 0.2
-
 env:
   parameter-store:
     DOCKER_USER: dockerhub-user
     DOCKER_TOKEN: dockerhub-token
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 18
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...

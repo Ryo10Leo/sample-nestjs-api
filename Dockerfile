@@ -11,4 +11,4 @@ COPY . .
 RUN npm run build && \
     npm ci --omit=dev
 
-CMD [ "npm", "run", "start" ]
+CMD [ "npm", "run", "start:prod" ]
